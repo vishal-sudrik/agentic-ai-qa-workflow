@@ -19,8 +19,20 @@
       "type": "http",
       "url": "https://api.githubcopilot.com/mcp/",
       "headers": {
-        "Authorization": "REDACTED"
+        "Authorization": "Bearer <GITHUB_TOKEN>"
       }
+    },
+    "Sticky Note": {
+      "command": "C:\\Users\\priya\\.local\\bin\\uv.exe",
+      "args": [
+        "run",
+        "--frozen",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "C:\\Custom-MCP-Server\\stickyNotes.py"
+      ]
     }
   },
   "inputs": []
